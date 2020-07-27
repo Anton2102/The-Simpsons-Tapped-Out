@@ -8,64 +8,29 @@ http.createServer( (request, response) => {
   if (request.url != '/favicon.ico'){
 
     if (request.url.endsWith('.css')) {
-      let cssFile = request.url.slice(1);
-      fs.readFile(cssFile, (err, data) => {
-        if (err) throw err;
-
-        response.setHeader('Content-Type', 'text/css');
-        response.statusCode = 200;
-        response.write(data);
-        response.end();
-      });
+      getOtherFile(request.url.slice(1), 'text/css', response);
     } else if (request.url.endsWith('.js')) {
-      let jsFile = request.url.slice(1);
-      fs.readFile(jsFile, (err, data) => {
-        if (err) throw err;
-
-        response.setHeader('Content-Type', 'text/javascript');
-        response.statusCode = 200;
-        response.write(data);
-        response.end();
-      });
+      getOtherFile(request.url.slice(1), 'text/javascript', response);
     } else if (request.url.endsWith('.jpg')) {
-      let imgFile = request.url.slice(1);
-      fs.readFile(imgFile, (err, data) => {
-        if (err) throw err;
-
-        response.setHeader('Content-Type', 'image/jpg');
-        response.statusCode = 200;
-        response.write(data);
-        response.end();
-      });
-
+      getOtherFile(request.url.slice(1), 'image/jpg', response);
     } else {
       getPage(request.url, response);
     }
   }
 }).listen(8888);
 
-// function getOtherFile(file, format){
-//   // let sliceNameFile = request.url.slice(1);
-//   let imgFile = request.url.slice(1);
-//   fs.readFile(imgFile, (err, data) => {
-//     if (err) throw err;
-//
-//     response.setHeader('Content-Type', 'image/jpg');
-//     response.statusCode = 200;
-//     response.write(data);
-//     response.end();
-//   });
-  // fs.readFile(sliceNameFile, (err, data) => {
-  //
-  //   // if (err) throw err;
-  //
-  //   response.setHeader('Content-Type', format);
-  //   response.statusCode = 200;
-  //   response.write(data);
-  //   response.end();
-  // });
+function getOtherFile(file, format, response){
 
-// }
+  fs.readFile(file, (err, data) => {
+    if (err) throw err;
+
+    response.setHeader('Content-Type', format);
+    response.statusCode = 200;
+    response.write(data);
+    response.end();
+  });
+
+}
 
 function getPage(name, response, statusCode = 200) {
   if (name == '/'){
