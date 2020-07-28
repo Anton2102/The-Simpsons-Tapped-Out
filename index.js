@@ -13,6 +13,8 @@ http.createServer( (request, response) => {
       getOtherFile(request.url.slice(1), 'text/javascript', response);
     } else if (request.url.endsWith('.jpg')) {
       getOtherFile(request.url.slice(1), 'image/jpg', response);
+    } else if (request.url.endsWith('.png')) {
+      getOtherFile(request.url.slice(1), 'image/png', response);
     } else {
       getPage(request.url, response);
     }
