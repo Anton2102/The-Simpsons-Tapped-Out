@@ -10,6 +10,12 @@
   padding-top: 30px;
 }
 
+.download {
+  background-color: #071025;
+  /* background-size: cover; */
+  /* background-size: cover; */
+}
+
 
 .footer {
   background-color: #69d5f9;
@@ -114,6 +120,26 @@
   background-image: url(../images/1.png);
   /* width: 20px; */
   /* height: 20px; */
+}
+
+.buttonDowload {
+  background-position: center center;
+  margin-top: 20px;
+  border: 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 85px;
+}
+
+.appStore {
+  background-image: url(../images/download/apple-badge-cta-ru.png);
+}
+.amazonAppStore {
+  background-image: url(../images/download/amazon-amazon-english.png);
+}
+.googlePlay {
+  background-image: url(../images/download/google-badge-cta-ru.png);
 }
 
 hr {

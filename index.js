@@ -63,10 +63,17 @@ function getPage(name, response, statusCode = 200) {
 
               data = data.replace(/\{\{footer\}\}/g, footer);
 
-              response.setHeader('Content-Type', 'text/html');
-              response.statusCode = statusCode;
-              response.write(data);
-              response.end();
+              fs.readFile('elems/download.html', 'utf8', (err, download) => {
+                if (err) throw err;
+
+                data = data.replace(/\{\{download\}\}/g, download);
+
+                response.setHeader('Content-Type', 'text/html');
+                response.statusCode = statusCode;
+                response.write(data);
+                response.end();
+              });
+
             });
 
           });
