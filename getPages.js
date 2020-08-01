@@ -15,11 +15,12 @@ function getPage(name, response, statusCode = 200) {
 
       // 1 уровень - ЭЛЕМЕНТЫ НА ВСЕХ СТРАНИЦАХ.
       // ------------------------------------------------------------------
+
       // Основыные элементы страницы!
+      // ссылки в header.
       fs.readFile('elems/linksHeader.html', 'utf8', (err, linksHeader) => {
         if (err) throw err;
 
-        // ссылки в header.
         data = data.replace(/\{\{linksHeader\}\}/g, linksHeader);
 
         // меню.
@@ -28,38 +29,46 @@ function getPage(name, response, statusCode = 200) {
 
           data = data.replace(/\{\{menu\}\}/g, menu);
 
-            // footer.
-            fs.readFile('elems/footer.html', 'utf8', (err, footer) => {
+          // footer.
+          fs.readFile('elems/footer.html', 'utf8', (err, footer) => {
+            if (err) throw err;
+
+            data = data.replace(/\{\{footer\}\}/g, footer);
+
+            // блок ссылок на закгрузку игры.
+            fs.readFile('elems/download.html', 'utf8', (err, download) => {
               if (err) throw err;
 
-              data = data.replace(/\{\{footer\}\}/g, footer);
+              data = data.replace(/\{\{download\}\}/g, download);
 
-              // блок ссылок на закгрузку игры.
-              fs.readFile('elems/download.html', 'utf8', (err, download) => {
+
+              // 2 уровень - ОТДЕЛЬНЫЕ СТРАНИЦЫ.
+              // -----------------------------------------------------------------
+
+              // Страница "Персонажи"!
+              fs.readFile('elems/charactersElems.html', 'utf8', (err, charactersElems) => {
                 if (err) throw err;
 
-                data = data.replace(/\{\{download\}\}/g, download);
+                data = data.replace(/\{\{charactersElems\}\}/g, charactersElems);
 
+                // Коллекция семьи Симпсонов.
+                fs.readFile('elems/characters/simpsons.html', 'utf8', (err, simpsons) => {
+                  if(err) throw err;
 
-                // 2 уровень - ОТДЕЛЬНЫЕ СТРАНИЦЫ.
-                // -----------------------------------------------------------------
-                // Страница "Персонажи"!
-                fs.readFile('elems/charactersElems.html', 'utf8', (err, charactersElems) => {
-                  if (err) throw err;
-
-                  data = data.replace(/\{\{charactersElems\}\}/g, charactersElems);
+                  data = data.replace(/\{\{charactersSimpsons\}\}/g, simpsons);
 
                   response.setHeader('Content-Type', 'text/html');
                   response.statusCode = statusCode;
                   response.write(data);
                   response.end();
+
                 });
 
               });
 
             });
 
-          // });
+          });
 
         });
 

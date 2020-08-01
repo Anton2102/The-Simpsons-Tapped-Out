@@ -1,11 +1,7 @@
-hr {
-  color: gold;
-  background-color: gold;
+hr{
+  margin: 0px;
   border: none;
-  height: 2px;
-  margin: 0 0 0 0;
 }
-
 a {
   text-decoration: none;
   color: white;
@@ -78,6 +74,7 @@ padding-top: 60px;
 /* style download */
 .download {
   background-color: #071025;
+  box-shadow: 0 0 5px 0 gold;
 }
 
 /* style download */
@@ -113,6 +110,7 @@ padding-top: 60px;
   background-color: #071025;
   color: white;
   margin: 40px 0px;
+  box-shadow: 0.6em 0.6em 7px rgba(122,122,122,0.5);
 }
 
 .charactersPeopleImages {
@@ -127,32 +125,28 @@ padding-top: 60px;
   height: 200px;
   /* margin-left: 30px; */
 }
+
 .gomerImage {
   background-image: url(../images/characters/simpsons/gomer.png);
 }
 .margjImage {
   background-image: url(../images/characters/simpsons/margj.png);
-  /* background-size: 182%; */
+  background-size: 163%;
 }
 .bartImage {
   background-image: url(../images/characters/simpsons/bart.png);
-  /* background-size: 182%; */
-  /* background-size: cover; */
-  /* padding: 0px 45px; */
-  /* margin: 70px 0px; */
-  /* padding: 70px; */
 }
 .dedSimpson {
   background-image: url(../images/characters/simpsons/dedSimpson.png);
-  background-size: 120%;
+  background-size: 100%;
 }
 .lizaSimpson {
   background-image: url(../images/characters/simpsons/lizaSimpson.png);
-  background-size: 110%;
+  background-size: 100%;
 }
 .meggi {
   background-image: url(../images/characters/simpsons/meggi.png);
-  /* background-size: 110%; */
+  background-size: 130%;
 }
 /* end style characters */
 
@@ -196,6 +190,13 @@ padding-top: 60px;
   .longHrRigth{
     margin-right: -30px;
   }
+  hr {
+    background-color: gold;
+    border: none;
+    height: 1.5px;
+    margin: 0;
+  }
+
 }
 
 /* Larger than tablet */
