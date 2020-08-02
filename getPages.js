@@ -57,10 +57,31 @@ function getPage(name, response, statusCode = 200) {
 
                   data = data.replace(/\{\{charactersSimpsons\}\}/g, simpsons);
 
-                  response.setHeader('Content-Type', 'text/html');
-                  response.statusCode = statusCode;
-                  response.write(data);
-                  response.end();
+                  // Коллекция семьи Ван Хутэнов
+                  fs.readFile('elems/characters/vanxytens.html', 'utf8', (err, vanxytens) => {
+                    if(err) throw err;
+
+                    data = data.replace(/\{\{charactersVanxytens\}\}/g, vanxytens);
+
+                    // Коллекция семья Фландерса
+                    fs.readFile('elems/characters/apys.html', 'utf8', (err, apys) => {
+                      if(err) throw err;
+
+                      data = data.replace(/\{\{charactersApys\}\}/g, apys);
+
+                      fs.readFile('elems/characters/flanders.html', 'utf8', (err, flanders) => {
+                        if(err) throw err;
+
+                        data = data.replace(/\{\{charactersFlanders\}\}/g, flanders);
+
+                        response.setHeader('Content-Type', 'text/html');
+                        response.statusCode = statusCode;
+                        response.write(data);
+                        response.end();
+                      });
+                    });
+                  });
+
 
                 });
 
