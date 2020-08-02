@@ -34,6 +34,19 @@ a {
   padding-left: 0;
   padding-right: 0;
 }
+
+.headerNameGame {
+  color: gold;
+  text-shadow: black 2px 2px 2px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+.descriptionGame {
+  font-family: 'Montserrat', sans-serif;
+  color: #071025;
+  font-weight:500;
+}
 /* end style header */
 
 
@@ -215,6 +228,17 @@ padding-top: 60px;
 
 .noBorder {
   border: none;
+}
+
+.headerPages {
+  font-family: 'Roboto Slab', serif;
+  color: gold;
+  text-shadow: black 2px 2px 2px;
+}
+.descriptionHeaderPages {
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+  margin-top: 10px;
 }
 /* конец общих стилей */
 
