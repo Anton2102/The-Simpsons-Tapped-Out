@@ -18,7 +18,7 @@ http.createServer( (request, response) => {
       readFile.getOtherFile(request.url.slice(1), 'image/jpg', response);
     } else if (request.url.endsWith('.png')) {
       readFile.getOtherFile(request.url.slice(1), 'image/png', response);
-    } else if(equest.url.endsWith('.js')){
+    } else if(request.url.endsWith('.js')){
       readFile.getOtherFile(request.url.slice(1), 'text/javascript', response);
     }else {
       readPage.getPage(request.url, response);
