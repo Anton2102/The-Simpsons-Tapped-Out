@@ -114,6 +114,16 @@ padding-top: 60px;
 }
 /* end style download */
 
+/* style pages characters */
+  .nameCharacters {
+    color: gold;
+    text-shadow: black 2px 2px 2px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    /* margin-top: -40px; */
+  }
+/* end style pages characters */
+
 /* style characters */
 .containerCharacters {
   border: 1px solid black;
@@ -280,7 +290,9 @@ padding-top: 60px;
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-
+  .nameCharacters {
+    padding-top: 40px;
+  }
 }
 
 /* Larger than phablet */
