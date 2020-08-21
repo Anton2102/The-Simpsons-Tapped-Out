@@ -5,10 +5,10 @@ const buttonsDownload = document.querySelectorAll('.buttonDowload');
 for(let button of buttonsDownload) {
   button.addEventListener('mouseover', () => {
 
-    button.style.backgroundSize = "100%";
+    button.style.backgroundSize = "180px";
 
     button.addEventListener('mouseout', () => {
-      button.style.backgroundSize = "80%";
+      button.style.backgroundSize = "200px";
     });
 
   });

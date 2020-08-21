@@ -6,9 +6,6 @@ a {
   text-decoration: none;
   color: white;
 }
-/* body {
-background-color: black;
-} */
 
 /* style header */
 .header {
@@ -38,7 +35,6 @@ background-color: black;
   text-shadow: black 2px 2px 2px;
   font-family: 'Dancing Script', cursive;
   font-size: 90px;
-  /* font-family: 'Montserrat', sans-serif; */
 }
 .descriptionGame {
   font-family: 'Montserrat', sans-serif;
@@ -46,7 +42,6 @@ background-color: black;
   font-weight:500;
 }
 /* end style header */
-
 
 /* style footer */
 .footer {
@@ -81,7 +76,6 @@ background-color: black;
 }
 /* end style footer */
 
-
 /* style download */
 .download {
   background-color: #071025;
@@ -109,8 +103,8 @@ background-color: black;
   padding: 40px 0px;
   border: 0px;
   background-repeat: no-repeat;
-  background-size: 80%;
-  width: 100%;
+  background-size: contain;
+  width: 200px;
 }
 /* end style download */
 
@@ -134,16 +128,14 @@ background-color: black;
   background-color: #071025;
   color: white;
   border-radius: 90px 0px 90px 0px;
-  /* padding-bottom: -10px; */
-  /* text-shadow:  */
 }
-.nameDialogue{
-  background-color: black;
-  /* width: 100%; */
+.characterTask {
+  /* background-color: black; */
+  color: gold;
 }
+
 /* lyan page */
 .backgroundDialogue {
-  /* width: auto; */
   display:flex;
   background-color: #f8fdfc;
   border: 1px solid black;
@@ -155,15 +147,17 @@ background-color: black;
 .headerCharacter {
   width: 80px;
   height: 80px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 5px;
+  min-width: 70px;
 }
 .headCharacterLyan{
   background-image: url(../images/characters/vanxytens/lyanPage/lyan.png);
   /* float: left; */
 }
-.textDialogue {
-  /* float: right; */
+.headCharacterMilxays {
+  background-image: url(../images/characters/vanxytens/lyanPage/milxays.png);
 }
 /* end style pages characters */
 
