@@ -7,7 +7,7 @@ a {
   color: white;
 }
 /* body {
-  background-color: black;
+background-color: black;
 } */
 
 /* style header */
@@ -67,7 +67,7 @@ a {
 }
 .iconMyHref {
   background-size: cover;
-padding-top: 60px;
+  padding-top: 60px;
 }
 
 .gitHubIcon {
@@ -115,13 +115,56 @@ padding-top: 60px;
 /* end style download */
 
 /* style pages characters */
-  .nameCharacters {
-    color: gold;
-    text-shadow: black 2px 2px 2px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 70px;
-    /* margin-top: -40px; */
-  }
+.nameCharacters {
+  color: gold;
+  text-shadow: black 2px 2px 2px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  /* margin-top: -40px; */
+}
+.subNameCharacters {
+  color: gold;
+  text-shadow: black 2px 2px 2px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+.subNameDialogue {
+  padding-top: 10px;
+  font-size: 20px;
+  background-color: #071025;
+  color: white;
+  border-radius: 90px 0px 90px 0px;
+  /* padding-bottom: -10px; */
+  /* text-shadow:  */
+}
+.nameDialogue{
+  background-color: black;
+  /* width: 100%; */
+}
+/* lyan page */
+.backgroundDialogue {
+  /* width: auto; */
+  display:flex;
+  background-color: #f8fdfc;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 5px 5px 5px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.headerCharacter {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  margin: 5px;
+}
+.headCharacterLyan{
+  background-image: url(../images/characters/vanxytens/lyanPage/lyan.png);
+  /* float: left; */
+}
+.textDialogue {
+  /* float: right; */
+}
 /* end style pages characters */
 
 /* style characters */
