@@ -130,8 +130,31 @@ a {
   border-radius: 90px 0px 90px 0px;
 }
 .characterTask {
-  /* background-color: black; */
-  color: gold;
+  background-color: #071025;
+  font-size: 16px;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0px;
+}
+.taskStart {
+  font-size: 30px;
+  background-color: #071025;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50px 50px 0px 0px;
+  color: white;
+  padding-top: -20px;
+}
+.buttonShowTask {
+  text-align: center;
+  margin: 10px 0px;
+}
+.showDialogueFalse {
+  display: none;
+}
+.showDialogueTrue {
+  display: block;
 }
 
 /* lyan page */
