@@ -175,6 +175,9 @@ a {
   margin: 5px;
   min-width: 70px;
 }
+/* end style pages characters */
+
+/* images head character */
 .headCharacterLyan{
   background-image: url(../images/characters/vanxytens/lyanPage/lyan.png);
   /* float: left; */
@@ -182,7 +185,15 @@ a {
 .headCharacterMilxays {
   background-image: url(../images/characters/vanxytens/lyanPage/milxays.png);
 }
-/* end style pages characters */
+.headCharacterBart {
+  background-image: url(../images/characters/simpsons/headCharacterBart.png);
+}
+.headCharacterGomer {
+  background-image: url(../images/characters/simpsons/headCharacterGomer.png);
+}
+.headCharacterLiza{
+  background-image: url(../images/characters/simpsons/headCharacterLiza.png);
+}
 
 /* style characters */
 .containerCharacters {
