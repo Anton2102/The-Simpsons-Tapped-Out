@@ -221,8 +221,17 @@ a {
 .headCharacterGomer {
   background-image: url(../images/characters/simpsons/headCharacterGomer.png);
 }
-.headCharacterLiza{
+.headCharacterLiza {
   background-image: url(../images/characters/simpsons/headCharacterLiza.png);
+}
+.headCharacterDyd {
+  background-image: url(../images/characters/workShcool/headCharacterDyd.png);
+}
+.headCharacterSmiters {
+  background-image: url(../images/characters/headCharacterSmiters.png);
+}
+.headCharacterBerns {
+  background-image: url(../images/characters/headCharacterBerns.png);
 }
 
 /* style characters */
