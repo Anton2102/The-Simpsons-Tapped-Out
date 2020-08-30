@@ -245,119 +245,101 @@ a {
 }
 
 .charactersPeopleImages {
-  /* background-size: 120%; */
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
-  background-size: 143%;
+  background-size: contain;
   padding: 0px 35px;
-  /* width: 100% */
-
+  transition: 1s;
   height: 200px;
-  /* margin-left: 30px; */
 }
-
+.backgroundCharacters {
+  background: transparent;
+  border-radius: 90px 0px 90px 0px;
+  transition: 1s;
+}
+.backgroundCharacters:hover {
+  background: #182141;
+  opacity: 1;
+}
 /* Симпсоны */
 .gomerImage {
+  /* background: red; */
   background-image: url(../images/characters/simpsons/gomer.png);
-  /* background-size: 143%; */
 }
 .margjImage {
   background-image: url(../images/characters/simpsons/margj.png);
-  /* background-size: 143%; */
 }
 .bartImage {
   background-image: url(../images/characters/simpsons/bart.png);
-  /* background-size: 143%; */
 }
 .dedSimpson {
   background-image: url(../images/characters/simpsons/dedSimpson.png);
-  background-size: 90%;
 }
 .lizaSimpson {
   background-image: url(../images/characters/simpsons/lizaSimpson.png);
-  background-size: 80%;
 }
 .meggi {
   background-image: url(../images/characters/simpsons/meggi.png);
-  background-size: 110%;
 }
 /* Ванхутэны */
 .kirkVanHouten {
   background-image: url(../images/characters/vanxytens/kirkVanHouten.png);
-  background-size: 100%;
 }
 .luannVanHouten {
   background-image: url(../images/characters/vanxytens/luannVanHouten.png);
-  background-size: 100%;
 }
 .grandmaVanHouten {
   background-image: url(../images/characters/vanxytens/grandmaVanHouten.png);
-  background-size: 110%;
 }
 /* Апу */
 .apy {
   background-image: url(../images/characters/apy/apy.png);
-  background-size: 100%;
 }
 .fatherApy {
   background-image: url(../images/characters/apy/fatherApy.png);
-  background-size: 102%;
 }
 .mandjyla {
   background-image: url(../images/characters/apy/mandjyla.png);
-  background-size: 70%;
 }
 /* Фландерсы */
 .ned {
   background-image: url(../images/characters/flanders/ned.png);
-  background-size: 102%;
 }
 .moude {
   background-image: url(../images/characters/flanders/moude.png);
-  background-size: 152%;
 }
 .todd {
   background-image: url(../images/characters/flanders/todd.png);
-  background-size: 102%;
 }
 /* Бубье */
 .patty {
   background-image: url(../images/characters/bube/patty.png);
-  background-size: 130%;
 }
 .jacqueline {
   background-image: url(../images/characters/bube/jacqueline.png);
-  background-size: 105%;
 }
 .selma {
   background-image: url(../images/characters/bube/selma.png);
-  background-size: 105%;
 }
 /* Школные раюотники */
 .skinner {
   background-image: url(../images/characters/workShcool/skinner.png);
-  background-size: 159%;
 }
 .willie {
   background-image: url(../images/characters/workShcool/willie.png);
-  background-size: 140%;
 }
 .edna {
   background-image: url(../images/characters/workShcool/edna.png);
-  background-size: 90%;
 }
 .dud {
   background-image: url(../images/characters/workShcool/dyd.png);
-  background-size: 110%;
 }
 .otto {
   background-image: url(../images/characters/workShcool/otto.png);
-  background-size: 100%;
 }
 .doris {
   background-image: url(../images/characters/workShcool/doris.png);
-  background-size: 105%;
 }
 /* end style characters */
 
