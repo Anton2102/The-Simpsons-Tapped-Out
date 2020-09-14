@@ -83,10 +83,6 @@ a {
 }
 
 /* style download */
-.characters {
-  background-color: #cdf1fd;
-}
-
 .appStore {
   background-image: url(../images/download/apple-badge-cta-ru.png);
 }
@@ -105,6 +101,10 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   width: 200px;
+  transition: 0.5s;
+}
+.buttonDowload:hover {
+  width: 180px;
 }
 /* end style download */
 
@@ -114,7 +114,6 @@ a {
   text-shadow: black 2px 2px 2px;
   font-family: 'Dancing Script', cursive;
   font-size: 70px;
-  /* margin-top: -40px; */
 }
 .subNameCharacters {
   color: gold;
@@ -185,13 +184,11 @@ a {
   height: 400px;
   background-position: center center;
   border-radius: 50px;
-  /* width: auto; */
   margin: 0;
   padding: 0;
   border-radius: 50%;
   margin: 5px 0px 20px 0px;
   opacity: 0.9;
-  /* width: 100%; */
 }
 .head404 {
   text-align: center;
@@ -210,7 +207,6 @@ a {
 /* images head character */
 .headCharacterLyan{
   background-image: url(../images/characters/vanxytens/lyanPage/lyan.png);
-  /* float: left; */
 }
 .headCharacterMilxays {
   background-image: url(../images/characters/vanxytens/lyanPage/milxays.png);
@@ -242,6 +238,18 @@ a {
   color: white;
   margin: 20px 0px 20px 0px;
   box-shadow: 0.6em 0.6em 7px rgba(122,122,122,0.5);
+  transition: 0.5s;
+}
+
+.containerCharacters:hover {
+  box-shadow: 0.8em 0.8em 7px white;
+  text-shadow: 1px 1px 1px gray;
+  /* animation: 1s; */
+}
+
+.containerCharacters p {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .charactersPeopleImages {
@@ -255,11 +263,12 @@ a {
 }
 .backgroundCharacters {
   background: transparent;
-  border-radius: 90px 0px 90px 0px;
+  border-radius: 90px 0px 90px 30px;
   transition: 1s;
 }
 .backgroundCharacters:hover {
   background: #182141;
+  box-shadow: gold 1px 1px 5px;
   opacity: 1;
 }
 /* Симпсоны */

@@ -1,6 +1,5 @@
 let buttonShowTask = document.querySelectorAll('.buttonShowTask');
 
-// console.log(buttonShowTask);
 for(let button of buttonShowTask){
   button.addEventListener('click', () => {
 
@@ -9,7 +8,6 @@ for(let button of buttonShowTask){
     } else {
       button.children[1].classList = 'showDialogueFalse';
     }
-    // console.log(button);
 
   });
 }
