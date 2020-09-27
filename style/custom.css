@@ -35,11 +35,13 @@ a {
   text-shadow: black 2px 2px 2px;
   font-family: 'Dancing Script', cursive;
   font-size: 90px;
+  user-select: none;
 }
 .descriptionGame {
   font-family: 'Montserrat', sans-serif;
   color: #071025;
   font-weight:500;
+  user-select: none; 
 }
 /* end style header */
 
